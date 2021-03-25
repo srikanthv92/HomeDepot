@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <th>Time</th>
+        <th style="width: 50px;">Pressure(Pa)</th>
+    </tr>
+    <tr  *ngFor="let item of bucket;">
+        <td style="padding-right: 10px;">{{item?.Last_UTC}}</td>
+        <td style="padding-right: 10px;">{{item?.PRE?.mx}}</td>
+        <td style="padding-right: 10px;">{{item?.PRE?.mn}}</td>
+        <td style="padding-right: 10px;">{{item?.PRE?.av}}</td>
+    </tr>
+</table>
+
+
+<div *ngFor="let temp of list;">
+    <img>{{temp?.camera?.img_src}}
+</div>
